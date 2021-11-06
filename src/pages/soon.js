@@ -1,18 +1,16 @@
 import React, { Component } from "react";
-import Title from "../components/title/title";
-import { featureProd } from "../data/ProductData/feature_products";
+import { movieArray } from "../data/HomePage/Data";
 import { Consumer } from "../components/products/content";
 import Product from "../components/products/product";
-import FilterBar from "../components/title/FilterBar";
 import { PaginationProvider, PaginationContext } from "../components/products/Pagination";
-import '../ProductStyle/ProductListStyle.css'
+import './ProductStyle/ProductListStyle.css'
 
 const { useContext, useEffect } = React;
 
 const Page = () => {
   const [pagination, setPagination] = useContext(PaginationContext)
 
-  const numberOfPages = Math.ceil(featureProd.length / pagination.limit);
+  const numberOfPages = Math.ceil(movieArray.length / pagination.limit);
 
   const navigateToPage = (pageNumber) => {
     setPagination({
@@ -39,7 +37,7 @@ const Page = () => {
         <div className="row">
           <div className="col-4 col-md-8 col-lg-9"></div>
           <div className="col-8 col-md-4 col-lg-3 my-4">
-        {pagination.page > 2 && <button className="btn pagebtn" onClick={() => navigateToPage(1)}>First</button>}
+        {pagination.page > 2 && <button className="btn pagebtn" onClick={() => navigateToPage}>First</button>}
         {pagination.page > 1 && <button className="btn pagebtn" onClick={() => navigateToPage(pagination.page - 1)}>Prev</button>}
         {[...Array(100)].slice(0, numberOfPages).map((x, i) =>
           <button className="btn pagebtn" onClick={() => navigateToPage(i + 1)}>{i + 1}</button>
@@ -53,22 +51,20 @@ const Page = () => {
 }
 export default class ProductList extends Component {
   state = {
-    products: featureProd
+    products: movieArray
   };
   render() {
     return (
       <React.Fragment>
         <div className="container">
-            <Title title="Sản phẩm" />
             <div className="row">
-              <FilterBar />
             </div>
             <div className="row">
             <PaginationProvider>
                 <Page />
-              </PaginationProvider>
+            </PaginationProvider>
           </div>
-              </div>
+        </div>
       </React.Fragment>
     )
   }

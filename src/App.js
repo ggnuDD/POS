@@ -1,7 +1,9 @@
 import React from 'react'
 import Header from './components/Header'
 import Home from "./pages/home";
-import Payment from "./pages/Payment";
+import Payment from "./pages/payment";
+import Soon from "./pages/soon";
+import soon from "./pages/soon";
 import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import SearchBar from "./components/SearchBar";
@@ -23,6 +25,7 @@ function App (){
                 <Route path="/" exact element={<Home/>} />
                 <Route path="/home" exact element={<Home/>} />
                 <Route path="/payment" exact element={<Payment/>} />
+                <Route path="/soon" exact element={<Soon/>} />
             </Routes>
             </div>
         </Router>

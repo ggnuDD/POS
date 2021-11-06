@@ -2,12 +2,10 @@
     //padding: 0px 0px 0px 350px;
     background-image: "url(" + "https://img.favpng.com/16/3/12/brick-drawing-clip-art-png-favpng-sxkVD0YL1erTjDQHJcwvHudPG.jpg" + ")";
     height: 330px;
-
-    
 }
 
 .content-featured{
-    margin: 0 50px;
+    margin: 0 0;
 }
 
 .slick-prev {
@@ -22,7 +20,7 @@
 
 .slick-next {
     border: 1px black !important;
-    right: -20px !important;
+    right: -25px !important;
     height: 60px !important;
     width: 60px !important;
     border-radius: 50px !important;

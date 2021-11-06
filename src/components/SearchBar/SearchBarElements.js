@@ -41,7 +41,8 @@ export const NavLogo = styled(Link)`
   height: 100%;
   cursor: pointer;
   @media screen and (max-width: 1200px) {
-    width: 140px;
+    width: 145px;
+    margin: 0 -10px;
   }
 `;
 

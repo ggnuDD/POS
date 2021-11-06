@@ -1,5 +1,5 @@
 import React from "react";
-import { movieArray } from "../data/HomePage/Data";
+import { movieArray } from "../../data/HomePage/Data";
 
 const { useState, createContext } = React;
 
