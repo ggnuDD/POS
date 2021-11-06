@@ -17,7 +17,7 @@ const Navbar = () => {
     <NavBarContainer>
       <Nav>
         <NavMenu>
-          <NavLink to="/ticket" activeStyle>
+          <NavLink to="/payment" activeStyle>
             Mua vé
           </NavLink>
           <div style={{borderLeft:'groove', borderWeight:'1px', marginTop:'1px', padding:'5px 5px', color:'#C4A484', height:'40px', alignSelf:'center'}}></div> 

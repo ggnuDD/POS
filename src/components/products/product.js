@@ -26,7 +26,7 @@ export default class Product extends Component {
                   class='text-on-image1'
                   onMouseEnter={() => this.setState({ count: this.state.hover + 1 })}
                   onMouseLeave={() => this.setState({ count: this.state.hover - 1 })}
-                  to="/ticket"
+                  to="/payment"
                 >
                   <h3>Đặt vé</h3>
                 </div>

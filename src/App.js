@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './components/Header'
 import Home from "./pages/home";
+import Payment from "./pages/Payment";
 import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import SearchBar from "./components/SearchBar";
@@ -21,6 +22,7 @@ function App (){
             <Routes>
                 <Route path="/" exact element={<Home/>} />
                 <Route path="/home" exact element={<Home/>} />
+                <Route path="/payment" exact element={<Payment/>} />
             </Routes>
             </div>
         </Router>

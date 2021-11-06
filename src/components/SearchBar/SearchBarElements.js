@@ -41,7 +41,7 @@ export const NavLogo = styled(Link)`
   height: 100%;
   cursor: pointer;
   @media screen and (max-width: 1200px) {
-    width: 90px;
+    width: 140px;
   }
 `;
 
@@ -53,7 +53,7 @@ export const LogoName = styled.p`
   margin-left: -10px;
 `;
 
-export const ShopName = styled.p`
+export const ShopLogo = styled.p`
   color: #ffdd00;
   font-size: 12px;
   font-weight: bold;

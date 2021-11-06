@@ -23,11 +23,11 @@ class InfoItems extends Component{
             <table>
               <tbody>
                 <tr>
-                    <td style={{borderLeft: "none"}}>Tên chi nhánh</td>
-                    <td style={{borderLeft: "none"}}>Số rạp</td>
-                    <td style={{borderLeft: "none"}}>Số ghế (left/total)</td>
-                    <td style={{borderLeft: "none"}}>Khung giờ chiếu</td>
-                    <td style={{border: "none"}}></td>
+                    <td style={{borderLeft: "none", fontWeight:'bold', fontSize: '20px'}}>Cinema Thủ Đức</td>
+                    <td style={{borderLeft: "none", fontWeight:'bold', fontSize: '20px'}}>Rạp 1</td>
+                    <td style={{borderLeft: "none", fontWeight:'bold', fontSize: '20px'}}>Ghế 5 (120/133)</td>
+                    <td style={{borderLeft: "none", fontWeight:'bold', fontSize: '20px'}}>18h30 - 20h</td>
+                    <td style={{border: "none", fontWeight:'bold', fontSize: '20px'}}></td>
                 </tr>
               </tbody>
             </table>
