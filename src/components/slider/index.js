@@ -20,7 +20,7 @@ class Featured extends React.Component
     };
     return (
       <div className="section-featured">
-        <div className="content-featured">     
+        <div style={{marginLeft:'20px'}}>     
         <Slider {...settings}>
             <div>
             <img 
@@ -43,7 +43,7 @@ class Featured extends React.Component
             <div>
             <img 
                 src="https://www.cgv.vn/media/catalog/product/cache/1/small_image/190x260/052b7e4a4f6d2886829431e534ef7a43/b/l/black_widow_-_final_poster_1__1.jpg"
-                style={{height:"395px"}}
+                style={{height:"395px", width:'95%'}}
             />
             </div>
             <div>
@@ -60,7 +60,7 @@ class Featured extends React.Component
             <div>
             <img 
                 src="https://www.cgv.vn/media/catalog/product/cache/1/small_image/190x260/052b7e4a4f6d2886829431e534ef7a43/p/o/poster_venom_121121_1__1.jpg"
-                style={{height:"395px"}}
+                style={{height:"395px", width:'95%'}}
             />
             </div>
             <div>

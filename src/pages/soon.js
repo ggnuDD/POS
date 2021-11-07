@@ -1,16 +1,21 @@
 import React, { Component } from "react";
-import { movieArray } from "../data/HomePage/Data";
+import { productList } from "../data/ProductData/soon";
 import { Consumer } from "../components/products/content";
-import Product from "../components/products/product";
+import soonProduct from "../components/products/soonProduct";
 import { PaginationProvider, PaginationContext } from "../components/products/Pagination";
 import './ProductStyle/ProductListStyle.css'
 
 const { useContext, useEffect } = React;
 
+
 const Page = () => {
   const [pagination, setPagination] = useContext(PaginationContext)
 
-  const numberOfPages = Math.ceil(movieArray.length / pagination.limit);
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
+  const numberOfPages = Math.ceil(productList.length / pagination.limit);
 
   const navigateToPage = (pageNumber) => {
     setPagination({
@@ -30,7 +35,7 @@ const Page = () => {
         <Consumer>
           {value => {
                   return value.products.slice(pagination.start, pagination.perPage).map(product => {
-                    return <Product key={product.id} product={product} />
+                    return <soonProduct key={product.id} product={product} />
                   })
                 }}
         </Consumer>
@@ -49,9 +54,9 @@ const Page = () => {
       </>
   )
 }
-export default class ProductList extends Component {
+export default class Soon extends Component {
   state = {
-    products: movieArray
+    products: productList
   };
   render() {
     return (
