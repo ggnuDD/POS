@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { ProductWrapper } from "../../container/ProductWrapper";
 import "bootstrap/dist/css/bootstrap.min.css";
-
-export default class soonProduct extends Component {
+export default class Soon extends Component {
 
   constructor(props) {
     super(props);
@@ -45,7 +44,7 @@ export default class soonProduct extends Component {
           <div className="card-footer d-flex justify-content-center">
             <ul className="list-group list-group-flush text-center">
               <Link to="/products/single-movie" className="link">
-                <li className="list-group-item" style={{backgroundColor:'#C4A484'}}>
+                <li className="list-group-item" style={{backgroundColor:'#C4A484', borderRadius:'0px'}}>
                   <p className="align-self-center mb-0">{title}</p>
                 </li>
               </Link>

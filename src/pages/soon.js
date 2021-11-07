@@ -1,19 +1,15 @@
 import React, { Component } from "react";
 import { productList } from "../data/ProductData/soon";
 import { Consumer } from "../components/products/content";
-import soonProduct from "../components/products/soonProduct";
+import Soon from "../components/products/soon";
 import { PaginationProvider, PaginationContext } from "../components/products/Pagination";
 import './ProductStyle/ProductListStyle.css'
 
-const { useContext, useEffect } = React;
 
+const { useContext, useEffect } = React;
 
 const Page = () => {
   const [pagination, setPagination] = useContext(PaginationContext)
-
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
 
   const numberOfPages = Math.ceil(productList.length / pagination.limit);
 
@@ -25,6 +21,9 @@ const Page = () => {
       perPage: (pageNumber * pagination.limit),
     });
   };
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   
   useEffect(() => {
     navigateToPage(1)
@@ -35,14 +34,14 @@ const Page = () => {
         <Consumer>
           {value => {
                   return value.products.slice(pagination.start, pagination.perPage).map(product => {
-                    return <soonProduct key={product.id} product={product} />
+                    return <Soon key={product.id} product={product} />
                   })
                 }}
         </Consumer>
         <div className="row">
           <div className="col-4 col-md-8 col-lg-9"></div>
           <div className="col-8 col-md-4 col-lg-3 my-4">
-        {pagination.page > 2 && <button className="btn pagebtn" onClick={() => navigateToPage}>First</button>}
+        {pagination.page > 2 && <button className="btn pagebtn" onClick={() => navigateToPage(1)}>First</button>}
         {pagination.page > 1 && <button className="btn pagebtn" onClick={() => navigateToPage(pagination.page - 1)}>Prev</button>}
         {[...Array(100)].slice(0, numberOfPages).map((x, i) =>
           <button className="btn pagebtn" onClick={() => navigateToPage(i + 1)}>{i + 1}</button>
@@ -54,7 +53,7 @@ const Page = () => {
       </>
   )
 }
-export default class Soon extends Component {
+export default class ProductList extends Component {
   state = {
     products: productList
   };
@@ -63,13 +62,12 @@ export default class Soon extends Component {
       <React.Fragment>
         <div className="container">
             <div className="row">
-            </div>
-            <div className="row">
             <PaginationProvider>
                 <Page />
+                <div style={{height:'30px', backgroundColor:'#C4A484'}}></div>
             </PaginationProvider>
           </div>
-        </div>
+              </div>
       </React.Fragment>
     )
   }

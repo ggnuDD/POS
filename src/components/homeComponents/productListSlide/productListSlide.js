@@ -45,7 +45,7 @@ function Lst(props) {
   });
   return <Carousel responsive={responsive}>{item}</Carousel>;
 }
-
+<img src="/background.jpg" />
 function ProductListSlide(props) {
   return (
     <ListWrapper style={{backgroundColor:'white'}}>
