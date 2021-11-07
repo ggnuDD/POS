@@ -30,14 +30,14 @@ class Featured extends React.Component
             </div>
             <div>
             <img 
-                src="https://www.cgv.vn/media/catalog/product/cache/1/small_image/190x260/052b7e4a4f6d2886829431e534ef7a43/p/o/poster_kntc_05.11.21_1__1.jpg"
-                style={{height:"395px"}}
+                src="https://www.cgv.vn/media/catalog/product/cache/1/small_image/190x260/052b7e4a4f6d2886829431e534ef7a43/s/b/sbm2-main-poster-01_1_1__1.jpg"
+                style={{height:"395px",  width:'95%'}}
             />
             </div>
             <div>
             <img 
-                src="https://www.cgv.vn/media/catalog/product/cache/1/small_image/190x260/052b7e4a4f6d2886829431e534ef7a43/p/o/poster-nobody-cgv_1.jpg"
-                style={{height:"395px"}}
+                src="https://www.cgv.vn/media/catalog/product/cache/1/small_image/190x260/052b7e4a4f6d2886829431e534ef7a43/f/f/ff9-fast-furious-9-cgv-poster_1.jpg"
+                style={{height:"395px",  width:'94%'}}
             />
             </div>
             <div>
