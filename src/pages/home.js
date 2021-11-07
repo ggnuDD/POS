@@ -18,7 +18,7 @@ export default class Home extends Component {
           />
           <ProductListSlide
             title="Phim sắp chiếu" 
-            dataList={productList}/>
+            dataList={featureProd}/>
         </div>
       </>
     );
