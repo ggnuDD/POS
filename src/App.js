@@ -30,6 +30,7 @@ function App (){
                 <Route path="/payment" exact element={<Payment/>} />
                 <Route path="/movie" exact element={<Movie/>} />
                 <Route path="/soon" exact element={<Soon/>} />
+                <Route path="/showing" exact element={<Showing/>} />
                 <Route path="/login" exact element={<Login/>} />
                 <Route path="/register" exact element={<Register/>} />
             </Routes>

@@ -63,6 +63,8 @@ export default class ProductList extends Component {
       <React.Fragment>
         <div className="container">
             <div className="row">
+            <div style={{backgroundColor:'black', height:'50px', borderRadius:'30px'}}></div>
+            <div style={{backgroundColor:'#C4A484', height:'30px'}}></div>
             </div>
             <div className="row">
             <PaginationProvider>

@@ -51,7 +51,7 @@ function ProductListSlide(props) {
     <ListWrapper style={{backgroundColor:'white'}}>
       <ListTitleRow>
         <ListTitle>{props.title}</ListTitle>
-        <ListBtn to="/soon">Xem thêm</ListBtn>
+        <ListBtn to="/showing">Xem thêm</ListBtn>
       </ListTitleRow>
       <div className="row">
         <Lst dataList={props.dataList} />

@@ -43,7 +43,7 @@ const SearchBar = () => {
         <NavMenu>
           <NavLink to="/login" style={{textDecoration: 'none'}}>
             <NavIcon className="fas fa-phone-alt"></NavIcon>
-            <NavLinkText>Đăng nhập/Đăng ký</NavLinkText>
+            <NavLinkText>Đăng nhập</NavLinkText>
           </NavLink>
           <NavLink to="/cart">
             <NavIcon className="fas fa-shopping-cart"></NavIcon>
