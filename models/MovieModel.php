@@ -1,20 +1,15 @@
 <?php
-class ItemModel extends Database
+class MovieModel extends Database
 {
 
-    function get_all_item()
+    function get_all_movie()
     {
-        $sql = "SELECT * from item ";
+        $sql = "SELECT * from DSPHIM ";
         return $this->get_list($sql);
     }
-    function get_item_category($id_category)
+    function get_movie_info($id)
     {
-        $sql = "SELECT * FROM item WHERE category_id = $id_category";
-        return $this->get_list($sql);
-    }
-    function get_item_info($id)
-    {
-        $sql = "SELECT * FROM item where id=$id";
+        $sql = "SELECT * FROM DSPHIM where id=$id";
         return $this->get_one($sql);
     }
 }
