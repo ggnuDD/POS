@@ -22,7 +22,7 @@ function App (){
             <SearchBar />
             <Header />
             <Navbar />
-            <div style={{height:"50px", backgroundColor: '#C4A484'}}></div>
+            <div style={{height:"30px", backgroundColor: '#C4A484'}}></div>
             <div style={{backgroundColor: '#C4A484'}}>
             <Routes>
                 <Route path="/" exact element={<Home/>} />

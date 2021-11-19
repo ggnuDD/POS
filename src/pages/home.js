@@ -11,7 +11,7 @@ export default class Home extends Component {
       <>
         <div className="container">
           <SimpleSlider />
-          <div style={{height:"80px", backgroundColor: '#C4A484'}}></div>
+          <div style={{height:"250px", backgroundColor: '#C4A484'}}></div>
           <ProductListSlide
             title="Phim đang chiếu"
             dataList={movieArray}
