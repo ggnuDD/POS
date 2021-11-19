@@ -1,7 +1,7 @@
 .section-featured {
     //padding: 0px 0px 0px 350px;
     background-image: "url(" + "https://img.favpng.com/16/3/12/brick-drawing-clip-art-png-favpng-sxkVD0YL1erTjDQHJcwvHudPG.jpg" + ")";
-    height: 330px;
+    height: 200px;
 }
 
 .content-featured{
@@ -10,7 +10,7 @@
 
 .slick-prev {
     border: 1px black !important;
-    left: -40px !important;
+    left: -37px !important;
     z-index: 1000 !important;
     height: 60px !important;
     width: 60px !important;
@@ -20,7 +20,7 @@
 
 .slick-next {
     border: 1px black !important;
-    right: -25px !important;
+    right: -37px !important;
     height: 60px !important;
     width: 60px !important;
     border-radius: 50px !important;

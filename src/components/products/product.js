@@ -12,7 +12,7 @@ export default class Product extends Component {
   }
 
   render() {
-    const { id, title, img, price2D } = this.props.product;
+    const { id, title, img, length, type } = this.props.product;
     return (
       <ProductWrapper className="col-12 col-md-6 col-lg-3 my-3 col-grid">
         <div className="card prodCard">

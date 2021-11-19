@@ -3,6 +3,7 @@ import { movieArray } from "../data/HomePage/Data";
 import { Consumer } from "../components/products/content";
 import Movie from "../components/products/movie";
 import { PaginationProvider, PaginationContext } from "../components/products/Pagination";
+import Pagination_n from "../components/products/pagination_n";
 import './ProductStyle/ProductListStyle.css'
 
 const { useContext, useEffect } = React;
@@ -67,10 +68,10 @@ export default class ProductList extends Component {
             <div style={{backgroundColor:'#C4A484', height:'30px'}}></div>
             </div>
             <div className="row">
-            <PaginationProvider>
+            <Pagination_n>
                 <Page />
                 <div style={{height:'30px', backgroundColor:'#C4A484'}}></div>
-            </PaginationProvider>
+            </Pagination_n>
           </div>
         </div>
       </React.Fragment>
