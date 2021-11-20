@@ -101,9 +101,9 @@ export const ProductWrapper = styled.div`
     transform: translate(100%, 100%);
   }
   .card-img-top {
-    width: 75%;
-    height: 270px;
-    margin: 10px 35px;
+    width: 100%;
+    height: 380px;
+    margin: 10px 0px;
   }
   .img-container {
     position: relative;

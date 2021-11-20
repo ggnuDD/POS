@@ -9,7 +9,7 @@ export const productList = [
         show:"05-11-2021", 
         img:"https://www.cgv.vn/media/catalog/product/cache/1/small_image/190x260/052b7e4a4f6d2886829431e534ef7a43/p/o/poster-tthm-rerun_1__1.jpg"},
        { 
-        id: 2, 
+        id: 500, 
         title:"KẺ NGUYỀN TA CHẾT", 
         type:["Hồi hộp","Hành động", "Tâm lý"], 
         price2D: "75000", 

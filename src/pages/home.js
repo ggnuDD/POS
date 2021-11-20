@@ -3,7 +3,7 @@ import { movieArray } from "../data/HomePage/Data";
 import { productList } from "../data/ProductData/soon";
 import { featureProd } from "../data/ProductData/showing";
 import ProductListSlide from "../components/homeComponents/productListSlide/productListSlide";
-import SimpleSlider from '../components/slider';
+import SimpleSlider from '../components/homeBanner';
 
 export default class Home extends Component {
   render() {

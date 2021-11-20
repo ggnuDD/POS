@@ -34,5 +34,5 @@ export const featured = [
      price3D: "165000", 
      length:"100 Phút", 
      show:"05-11-2021", 
-     img:"hhttps://media.lottecinemavn.com/Media/WebAdmin/b165bd1c32a04f44973c3d08552640ad.png"}
+     img:"https://media.lottecinemavn.com/Media/WebAdmin/b165bd1c32a04f44973c3d08552640ad.png"}
 ];

@@ -3,11 +3,13 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Slide.scss"
+import { movieArray } from "../../data/HomePage/Data";
 
 class Featured extends React.Component
 {
   constructor(props) {
     super(props);
+    this.state = {sliders:movieArray}
     this.play = this.play.bind(this);
     this.pause = this.pause.bind(this);
     }
@@ -18,6 +20,15 @@ class Featured extends React.Component
     this.slider.slickPause();
   }
   
+  sliders() {
+    return this.state.sliders.map(data => {
+        return (
+            <div key={data}>
+                <img alt="image" src={data.img} />
+            </div>
+        )
+    });
+  }
     
   render()
   { 
@@ -46,31 +57,8 @@ class Featured extends React.Component
       <div className="section-featured">
         <div>     
         <Slider {...settings}>
-            <div>
-            <img 
-                src="https://media.lottecinemavn.com/Media/WebAdmin/b165bd1c32a04f44973c3d08552640ad.png"
-                to="/payment"
-                style={{height:"420px", width:'100%'}}/>
-            </div>
-            <div>
-            <img 
-                src="https://media.lottecinemavn.com/Media/WebAdmin/5993f44ecb8b4ac094fc247c0a43803f.jpg"
-                style={{height:"420px",  width:'100%'}}
-            />
-            </div>
-            <div>
-            <img 
-                src="https://media.lottecinemavn.com/Media/WebAdmin/d503d574995149699de9640cda275724.jpg"
-                style={{height:"420px",  width:'100%'}}
-            />
-            </div>
-            <div>
-            <img 
-                src="https://media.lottecinemavn.com/Media/WebAdmin/0dca13bf5c54429e95b9a8a0c648d087.png"
-                style={{height:"420px", width:'100%'}}
-            />
-            </div>
-          </Slider>
+            {this.sliders()}
+        </Slider>
         </div>   
       </div>  
 ) } }

@@ -12,10 +12,10 @@ export default class Movie extends Component {
   }
 
   render() {
-    const { id, title, img, type, length } = this.props.product;
+    const { id, title, img, type, length, show } = this.props.product;
     return (
       <ProductWrapper className="col-12 col-md-6 col-lg-3 my-3 col-grid">
-        <div className="card prodCard">
+        <div className="card prodCard" style={{height: '600px'}}>
           <div className="img-container p-5">
             <Link to="/products/single-movie">
               <div className="head-text">
@@ -54,6 +54,9 @@ export default class Movie extends Component {
                   </div>
                   <div style={{color:'black', paddingTop: '10px'}}>
                     <span style={{fontWeight: 'bold'}} >Thời lượng:</span><span> {length} </span>
+                  </div>
+                  <div style={{color:'black', paddingTop: '10px'}}>
+                    <span style={{fontWeight: 'bold'}} >Khởi chiếu:</span><span> {show} </span>
                   </div>
                 </li>
               </Link>
