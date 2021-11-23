@@ -32,13 +32,13 @@ export function FooterContainer() {
           <Footer.Column>
             <Footer.Title>Kết nối với chúng tôi</Footer.Title>
             <Footer.Link href="https://facebook.com">
-              <Icon className="fab fa-facebook"></Icon>Facebook
+              <Footer.Link className="fab fa-facebook"></Footer.Link>Facebook 
             </Footer.Link>
             <Footer.Link href="https://youtube.com">
-              <Icon className="fab fa-youtube"></Icon>Youtube
+              <Footer.Link className="fab fa-youtube"></Footer.Link>Youtube
             </Footer.Link>
             <Footer.Link href="https://twitter.com">
-              <Icon className="fab fa-twitter"></Icon>Twitter
+              <Footer.Link className="fab fa-twitter"></Footer.Link>Twitter
             </Footer.Link>
           </Footer.Column>
         </Footer.Row>
