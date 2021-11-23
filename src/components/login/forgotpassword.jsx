@@ -1,11 +1,11 @@
 import React from "react";
-import { Link } from 'react-router-dom';
-import imgLogin from './login-img.svg';
+import img from './password.svg';
 import { Button, Col, Container, Form, Row } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import './login.css';
-function Login() {
-    
+import { Link } from 'react-router-dom';
+
+function Forgotpassword() {
     return (
         <Container className="container-fluid">
             <Row>
@@ -17,32 +17,29 @@ function Login() {
                 </Form.Group>
 
                 <Form.Group className="mb-3">
-                    <Form.Label>Mật khẩu</Form.Label>
-                    <Form.Control type="password" placeholder="Nhập mật khẩu của bạn" />
-                    
-                    <Form.Text className="text-muted">
-                        <Link to="/forgotpassword"> Quên mật khẩu? </Link>
-                    </Form.Text>
+                    <Form.Label>Email</Form.Label>
+                    <Form.Control type="Email" placeholder="Nhập email để xác nhận" />
                 </Form.Group>
-                
+                        
                 <Form.Group className="mb-3">
                 <Form.Text className="text-muted">
-                    Chưa có tài khoản? <Link to="/register"> Đăng ký </Link>
+                    Chúng tôi sẽ gửi mã xác nhận đến email của bạn
                 </Form.Text>
-                
                 </Form.Group>
+                <Link to="/newpassword">                       
                 <Button variant="danger" size="lg" type="submit">
-                    Đăng nhập
+                    Gửi mã xác nhận
                 </Button>
+                </Link>
                 </Form>
                 </Col>
 
                 <Col lg={4} md={6} sm={12}>
-                    <img className="login-img" src={imgLogin}></img>
+                    <img className="login-img" src={img}></img>
                 </Col>
             </Row>
         </Container>
     )
-    
 }
-export default Login;
+
+export default Forgotpassword;
