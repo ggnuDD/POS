@@ -32,6 +32,7 @@ function App (){
             </Routes>
             </div>
         </Router>
+        <div style={{height:"30px", backgroundColor: '#C4A484'}}></div>
         <FooterContainer />
       </Provider>
   </div>

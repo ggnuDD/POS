@@ -10,11 +10,12 @@
   display: inline-block;
   background-color: white;
   font-size: 20px;
-  width: 225px;
+  width: 233px;
   height: 60px;
   font-weight: bold;
   list-style: none;
-  padding: 16px 3.2rem;
+  padding: 14px 3.4rem;
+  border: solid #C4A484;
   @media only screen and (max-width: 600px) {
     font-size: 10px;
   }
@@ -30,6 +31,8 @@
 .tab-list-active {
   background-color: black;
   color: #C4A484;
+  border: none;
+  padding: 16px 3.4rem;
 }
 
 .tab-list-active:hover {

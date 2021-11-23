@@ -6,18 +6,19 @@ export const ProductWrapper = styled.div`
         position: relative;
     }
     .text-on-image1 {
-      display: none;
+      display: block;
       border: solid;
       border-weight: 1px;
       position: absolute;
       text-align: center;
       right: 65px;
       left: 65px;
-      bottom: 50px;
+      bottom: 120px;
       color: #C4A484;
+      text-decoration: none;
     }
     .text-on-image2 {
-      display: none;
+      display: block;
       border: solid;
       color: #C4A484;
       border-weight: 1px;
@@ -25,9 +26,10 @@ export const ProductWrapper = styled.div`
       text-align: center;
       right: 65px;
       left: 65px;
-      top: 50px;
+      top: 120px;
+      text-decoration: none;
     }
-
+    
     .card-footer {
         border-top: transparent;
         background-color: #C4A484 !important;
