@@ -9,19 +9,25 @@ export const ProductWrapper = styled.div`
       display: block;
       border: solid;
       border-weight: 1px;
+      border-color: red;
+      background-color: red !important;
+      border-radius: 10px;
       position: absolute;
       text-align: center;
       right: 65px;
       left: 65px;
       bottom: 120px;
-      color: #C4A484;
+      color: white;
       text-decoration: none;
     }
     .text-on-image2 {
       display: block;
       border: solid;
-      color: #C4A484;
       border-weight: 1px;
+      border-color: red;
+      background-color: red !important;
+      border-radius: 10px;
+      color: white;
       position: absolute;
       text-align: center;
       right: 65px;

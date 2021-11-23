@@ -18,23 +18,25 @@ export default class Movie extends Component {
     const { id, title, img, type, length, show } = this.props.product;
     const hover = this.state.hover;
 
+
     return (
       <ProductWrapper className="col-12 col-md-6 col-lg-3 my-3 col-grid">
         <div className="card prodCard" style={{height: '600px'}}>
           <div className="img-container p-5">
             <div
-              onMouseEnter={() => this.setState({ style: {display: 'block'}, count : this.state.hover + 1} )}
-              onMouseLeave={() => this.setState({ style: {display: 'none'}, count : this.state.hover - 1} )}>
+              onMouseEnter={() => this.setState({ style: {display: 'block'}, count : hover + 1} )}
+              onMouseLeave={() => this.setState({ style: {display: 'none'}, count : hover - 1} )}>
               <div className="head-text">
                 <div className="head-image">
                   <img src={img} alt="products" className="card-img-top" id={id}/>
+                   
                 </div >
-                <div style= {{backgroundImage: "url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Solid_black.svg/768px-Solid_black.svg.png')", marginTop: '-420px', height: '400px'}}>
+                <div>
                   <Link
                     class='text-on-image1'
                     to="/payment"
                     style={this.state.style}>
-                      <h3>Đặt vé</h3>
+                      <h3>Mua vé</h3>
                   </Link>
                   <Link 
                     class='text-on-image2'
