@@ -5,7 +5,9 @@ const Context = React.createContext();
 class Provider extends Component {
   state = {
     products: [],
-    category: ""
+    category: "",
+    soon: soon,
+    showing: showing
   };
 
   setProducts = (data) => {

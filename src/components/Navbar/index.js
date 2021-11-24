@@ -11,7 +11,7 @@ import {
   NavBarContainer,
 } from "./NavbarElements";
 import { Consumer } from "../products/content";
-import { productList } from "../../data/ProductData/soon";
+import { soon } from "../../data/ProductData/soon";
 const Navbar = () => {
   return (
     <NavBarContainer>
@@ -25,11 +25,9 @@ const Navbar = () => {
             Phim
           </NavLink>
           <div style={{borderLeft:'groove', borderWeight:'1px', marginTop:'1px', padding:'5px 5px', color:'#C4A484', height:'40px', alignSelf:'center'}}></div> 
-          <Consumer>
-          {value => (<NavLink to="/theaters" onClick={() => {value.setProducts(productList);value.setTitle("Sản phẩm")}} activeStyle>
+          <NavLink to="/theaters" activeStyle>
             Cụm rạp
-          </NavLink>)}
-          </Consumer>
+          </NavLink>
           <div style={{borderLeft:'groove', borderWeight:'1px', marginTop:'1px', padding:'5px 5px', color:'#C4A484', height:'40px', alignSelf:'center'}}></div> 
           <NavLink to="/member" activeStyle>
             Thành viên

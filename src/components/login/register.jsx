@@ -12,14 +12,19 @@ function Register() {
                 <Form className="form-container">
                 <Form.Group className="mb-3" >
                     <Form.Label>Họ và tên</Form.Label>
-                    <Form.Control type="text"/>
+                    <Form.Control type="text" placeholder="Họ và tên của bạn" />
                 </Form.Group>
 
                 <Form.Group className="mb-3" >
                     <Form.Label>Số điện thoại</Form.Label>
-                    <Form.Control type="number"/>
+                    <Form.Control type="number" placeholder="Số điện thoại của bạn" />
                 </Form.Group>
-              
+
+                <Form.Group className="mb-3" >
+                    <Form.Label>Email</Form.Label>
+                    <Form.Control type="email" placeholder="Nhập email của bạn"/>
+                </Form.Group>
+                        
                 <Form.Group className="mb-3" >
                     <Form.Label>Tài khoản</Form.Label>
                     <Form.Control type="text" placeholder="Nhập tài khoản của bạn" />
@@ -39,9 +44,9 @@ function Register() {
                     </Form.Text>
                 </Form.Group>
                 
-                <Button variant="primary btn-block" type="submit">
+                <Link to="/login"><Button variant="danger" size="lg" type="submit">
                     Đăng ký
-                </Button>
+                </Button></Link>  
                 </Form>
                 </Col>
 

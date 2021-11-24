@@ -10,13 +10,13 @@ export const featured = [
      img:"https://media.lottecinemavn.com/Media/WebAdmin/0dca13bf5c54429e95b9a8a0c648d087.png"},
     { 
      id: 2, 
-     title:"CẤM THUẬT", 
-     type:["Kinh dị"], 
+     title:"SHANG-CHI VÀ HUYỀN THOẠI THẬP LUÂN", 
+     type:["Hành động"], 
      price2D: "75000", 
      price3D: "165000", 
      length:"100 Phút", 
-     show:"05-11-2021", 
-     img:"https://media.lottecinemavn.com/Media/WebAdmin/5993f44ecb8b4ac094fc247c0a43803f.jpg"},
+     show:"12-11-2021", 
+     img:"https://media.lottecinemavn.com/Media/WebAdmin/b4ec731cb37c4bf3b448a95fcd44182a.jpg"},
     { 
      id: 3, 
      title:"VỆ SĨ SÁT THỦ 2: NHÀ CÓ NÓC", 
@@ -34,5 +34,5 @@ export const featured = [
      price3D: "165000", 
      length:"100 Phút", 
      show:"05-11-2021", 
-     img:"hhttps://media.lottecinemavn.com/Media/WebAdmin/b165bd1c32a04f44973c3d08552640ad.png"}
+     img:"https://media.lottecinemavn.com/Media/WebAdmin/b165bd1c32a04f44973c3d08552640ad.png"}
 ];

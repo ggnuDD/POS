@@ -1,9 +1,7 @@
 import React from 'react'
 import Header from './components/Header'
 import Home from "./pages/home";
-import Payment from "./pages/Payment";
-import Soon from "./pages/soon";
-import Showing from "./pages/showing";
+import Payment from "./pages/payment";
 import Movie from "./pages/movie";
 import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -13,6 +11,7 @@ import { Provider } from "./components/products/content";
 import Login from "./components/login/login"
 import Register from "./components/login/register"
 import './App.css';
+
 function App (){
   return(
   <div>
@@ -28,13 +27,12 @@ function App (){
                 <Route path="/home" exact element={<Home/>} />
                 <Route path="/payment" exact element={<Payment/>} />
                 <Route path="/movie" exact element={<Movie/>} />
-                <Route path="/soon" exact element={<Soon/>} />
-                <Route path="/showing" exact element={<Showing/>} />
                 <Route path="/login" exact element={<Login/>} />
                 <Route path="/register" exact element={<Register/>} />
             </Routes>
             </div>
         </Router>
+        <div style={{height:"30px", backgroundColor: '#C4A484'}}></div>
         <FooterContainer />
       </Provider>
   </div>

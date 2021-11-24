@@ -45,9 +45,6 @@ const SearchBar = () => {
             <NavIcon className="fas fa-phone-alt"></NavIcon>
             <NavLinkText>Đăng nhập</NavLinkText>
           </NavLink>
-          <NavLink to="/cart">
-            <NavIcon className="fas fa-shopping-cart"></NavIcon>
-          </NavLink>
         </NavMenu>
       </Nav>
     </SearchBarContainer>
