@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from './components/Header'
 import Home from "./pages/home";
-import Payment from "./pages/payment";
+import Payment from "./pages/Payment";
 import Soon from "./pages/soon";
 import Showing from "./pages/showing";
 import Movie from "./pages/movie";
@@ -13,7 +13,6 @@ import { Provider } from "./components/products/content";
 import Login from "./components/login/login"
 import Register from "./components/login/register"
 import './App.css';
-
 function App (){
   return(
   <div>
