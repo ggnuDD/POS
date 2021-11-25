@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from './components/Header'
 import Home from "./pages/home";
-import Payment from "./pages/payment";
+import Payment from "./pages/Payment";
 import Movie from "./pages/movie";
 import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
