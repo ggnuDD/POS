@@ -3,6 +3,7 @@ import Header from './components/Header'
 import Home from "./pages/home";
 import Payment from "./pages/Payment";
 import Movie from "./pages/movie";
+import Admin from "./pages/admin";
 import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import SearchBar from "./components/SearchBar";
@@ -25,6 +26,7 @@ function App (){
             <Routes>
                 <Route path="/" exact element={<Home/>} />
                 <Route path="/home" exact element={<Home/>} />
+                <Route path="/admin" exact element={<Admin/>} />
                 <Route path="/payment" exact element={<Payment/>} />
                 <Route path="/movie" exact element={<Movie/>} />
                 <Route path="/login" exact element={<Login/>} />
