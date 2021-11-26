@@ -1,10 +1,15 @@
 import React, { Component } from "react";
+import { movieArray } from "../../data/HomePage/Data";
+import { showing } from "../../data/ProductData/showing";
+import { soon } from "../../data/ProductData/soon";
 
 const Context = React.createContext();
 
 class Provider extends Component {
   state = {
-    products: [],
+    products: soon,
+    soon: soon,
+    showing: showing,
     category: ""
   };
 

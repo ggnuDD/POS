@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="/logo192.png">
+    <!--
+          manifest.json provides metadata used when your web app is installed on a
+          user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+        -->
+    <link rel="manifest" href="/manifest.json">
+    <!--
+          Notice the use of  in the tags above.
+          It will be replaced with the URL of the `public` folder during the build.
+          Only files inside the `public` folder can be referenced from the HTML.
+    
+          Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+          work correctly both with client-side routing and a non-root public URL.
+          Learn how to configure a non-root public URL by running `npm run build`.
+        -->
+    <link rel="stylesheet" href="./adminpageStyle/app.css">
+    <link rel="stylesheet" href="./adminpageStyle/app2.css">
+    <title>CINEMA ADMINISTRATOR</title>
+    
+    
+    {{!-- <style>
+        @import url(https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap);
+    </style> --}}
+    
+</head>
+
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+        <div>
+            <div class="sc-hBUSln eZBZqd">
+                <nav class="sc-fotOHu bzhVOu">
+                    <div class="sc-fFeiMQ efoZGB">
+                        <a aria-current="page" class="sc-bkkeKt vEvIV active" href="/home" style="text-decoration: none;">
+                            <p class="sc-ieecCq cBSDkz">Cinema</p>
+                            <p class="sc-dJjYzT ebZoEH"><img src="https://scontent.fsgn8-1.fna.fbcdn.net/v/t1.15752-9/249256387_372992894553725_4491604262772104861_n.png?_nc_cat=102&amp;ccb=1-5&amp;_nc_sid=ae9488&amp;_nc_ohc=oGGPkjliv9cAX8C50jy&amp;_nc_ht=scontent.fsgn8-1.fna&amp;oh=4d4f46760e7151c7961467e7e9ed2fb8&amp;oe=61AA22D5"
+                                    width="30" height="30" float="left"></p>
+                        </a>
+                    </div>
+                    <nav class="sc-iwjdpV deBwYv"><input type="text" placeholder="Tìm phim đang chiếu" class="sc-cxpSdN foKbKM"><button type="button" class="sc-llYSUQ fiPqaB"><i class="sc-fKVqWL iYTQgr fas fa-search"></i></button></nav>
+                    <!-- <div class="sc-dlVxhl ibClPT"><a class="sc-hGPBjI bnRdVN" href="/login" style="text-decoration: none;"><i class="sc-fKVqWL iYTQgr fas fa-phone-alt"></i><p class="sc-kfPuZi bxEbQv">Đăng nhập</p></a></div> -->
+                </nav>
+            </div>
+            <header style="background: white; color: rgb(196, 164, 132); text-align: center; padding: 10px; font-family: Courier New; border-width: 5px;"><img src="https://scontent.fsgn8-1.fna.fbcdn.net/v/t1.15752-9/249256387_372992894553725_4491604262772104861_n.png?_nc_cat=102&amp;ccb=1-5&amp;_nc_sid=ae9488&amp;_nc_ohc=oGGPkjliv9cAX8C50jy&amp;_nc_ht=scontent.fsgn8-1.fna&amp;oh=4d4f46760e7151c7961467e7e9ed2fb8&amp;oe=61AA22D5"
+                    width="90" height="90"></header>
+            <nav class="sc-furwcr bqsQtc">
+                <nav class="sc-pVTFL kOcHiC">
+                    <div class="sc-egiyK kHqFke"><a class="sc-kDTinF hgasKl" href="/payment">Mua vé</a>
+                        <div style="border-left: groove; margin-top: 1px; padding: 5px; color: rgb(196, 164, 132); height: 40px; align-self: center;"></div><a class="sc-kDTinF hgasKl" href="/movie">Phim</a>
+                        <div style="border-left: groove; margin-top: 1px; padding: 5px; color: rgb(196, 164, 132); height: 40px; align-self: center;"></div><a class="sc-kDTinF hgasKl" href="/theaters">Cụm rạp</a>
+                        <div style="border-left: groove; margin-top: 1px; padding: 5px; color: rgb(196, 164, 132); height: 40px; align-self: center;"></div><a class="sc-kDTinF hgasKl" href="/member">Thành viên</a>
+                        <div style="border-left: groove; margin-top: 1px; padding: 5px; color: rgb(196, 164, 132); height: 40px; align-self: center;"></div><a class="sc-kDTinF hgasKl" href="/redeem">Đổi quà</a></div>
+                </nav>
+            </nav>
+            <div style="height: 30px; background-color: rgb(196, 164, 132);"></div>
+            <div style="background-color: rgb(196, 164, 132);">
+                <div class="container">
+                    <div class="shop grid ">
+                        <span class="content__header-decs" style="font-size: 30px">CHỨC NĂNG</span>
+                        <div class="content__header">
+                            <h2 class="content__header-heading" style="display: inline-block">
+                                <!-- <span class="under-line-effect under-line-effect--red">COMBO</span> -->
+                                <div class="tabs">
+                                    <div class="tab-item active">
+                                        <i class="tab-icon"></i> CẬP NHẬT PHIM
+                                    </div>
+                                    <!-- <div class="tab-item">
+                                        <i class="tab-icon"></i> PHÂN LOẠI
+                                    </div> -->
+                                    <div class="tab-item">
+                                        <i class="tab-icon"></i> SỐ LIỆU THỐNG KÊ
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                            </h2>
+                        </div>
+                        <div class="tab-content">
+                            <div class="tab-pane active">
+                                <!-- <h2>CẬP NHẬT PHIM</h2> -->
+                                <div class="shop__wrap row feature-home">
+                                    <div class="feature-item col l-4 m-12">
+                                        <img src="./public/img/filmtitle.jpg" alt="" class="product__item-img">
+                                        <div class="product-body">
+                                            <div class="product__item-heading">THÊM PHIM</div>
+                                        </div>
+                                    </div>
+                                    <div class="feature-item col l-4 m-12">
+                                        <img src="./public/img/showtime.jpg" alt="" class="product__item-img">
+                                        <div class="product-body">
+                                            <div class="product__item-heading">TIÊU ĐỀ/LỊCH CHIẾU</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="tab-pane">
+                                <h2>PHÂN LOẠI</h2>
+                                <div class="shop__wrap row feature-home">
+                                    <div class="feature-item col l-4 m-12">
+                                        <img src="./public/img/filmcategory.jpg" alt="" class="product__item-img">
+                                        <div class="product-body">
+                                            <div class="product__item-heading">THỂ LOẠI PHIM</div>
+                                        </div>
+                                    </div>
+                                    <div class="feature-item col l-4 m-12">
+                                        <img src="./public/img/filmondate.jpg" alt="" class="product__item-img">
+                                        <div class="product-body">
+                                            <div class="product__item-heading">CHIẾU THEO NGÀY</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <div class="tab-pane">
+                                <!-- <h2>SỐ LIỆU THỐNG KÊ</h2> -->
+                                <div class="shop__wrap row feature-home">
+                                    <div class="feature-item col l-4 m-12">
+                                        <img src="./public/img/profit.jpg" alt="" class="product__item-img">
+                                        <div class="product-body">
+                                            <div class="product__item-heading">DOANH THU</div>
+                                        </div>
+                                    </div>
+                                    <div class="feature-item col l-4 m-12">
+                                        <img src="./public/img/theaters.jpg" alt="" class="product__item-img">
+                                        <div class="product-body">
+                                            <div class="product__item-heading">RẠP</div>
+                                        </div>
+                                    </div>
+                                    <div class="feature-item col l-4 m-12">
+                                        <img src="./public/img/films.jpg" alt="" class="product__item-img">
+                                        <div class="product-body">
+                                            <div class="product__item-heading">PHIM</div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="feature-item col l-4 m-12">
+                                        <img src="./public/img/times.jpg" alt="" class="product__item-img">
+                                        <div class="product-body">
+                                            <div class="product__item-heading">KHUNG GIỜ CHIẾU</div>
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div style="height: 20px; background-color: rgb(196, 164, 132);"></div>
+
+                </div>
+            </div>
+            <div style="height: 30px; background-color: rgb(196, 164, 132);"></div>
+            <div class="sc-iJKOTD egwNNu">
+                <div class="sc-giYglK cAbCct">
+                    <div class="sc-bYoBSM fREbbL">
+                        <div class="sc-ezbkAF dWctTY">
+                            <p class="sc-jJoQJp bSNCxh">Cinema Việt Nam</p><a href="#" class="sc-kLwhqv bgfcJO">Giới thiệu</a><a href="#" class="sc-kLwhqv bgfcJO">Tiện ích Online</a><a href="#" class="sc-kLwhqv bgfcJO">Thẻ quà tặng</a><a href="#" class="sc-kLwhqv bgfcJO">Tuyển dụng</a>
+                            <a href="#" class="sc-kLwhqv bgfcJO">Liên hệ quảng cáo</a>
+                        </div>
+                        <div class="sc-ezbkAF dWctTY">
+                            <p class="sc-jJoQJp bSNCxh">Điều khoản sử dụng</p><a href="#" class="sc-kLwhqv bgfcJO">Điều khoản chung</a><a href="#" class="sc-kLwhqv bgfcJO">Điều khoản giao dịch</a><a href="#" class="sc-kLwhqv bgfcJO">Chính sách thanh toán</a><a href="#" class="sc-kLwhqv bgfcJO">Chính sách bảo mật</a>
+                            <a href="#" class="sc-kLwhqv bgfcJO">Câu hỏi thường gặp</a>
+                        </div>
+                        <div class="sc-ezbkAF dWctTY">
+                            <p class="sc-jJoQJp bSNCxh">Chăm sóc khách hàng</p>
+                            <p class="sc-ikJyIC dyAZfm">Hotline: 1900 1009</p>
+                            <p class="sc-ikJyIC dyAZfm">Giờ làm việc: 8:00 - 22:00</p>
+                            <p class="sc-ikJyIC dyAZfm">Email hỗ trợ: support@cinema.vn</p>
+                        </div>
+                        <div class="sc-ezbkAF dWctTY">
+                            <p class="sc-jJoQJp bSNCxh">Kết nối với chúng tôi</p>
+                            <a href="https://facebook.com" class="sc-kLwhqv bgfcJO">
+                                <a class="sc-kLwhqv bgfcJO fab fa-facebook"></a>Facebook</a>
+                            <a href="https://youtube.com" class="sc-kLwhqv bgfcJO">
+                                <a class="sc-kLwhqv bgfcJO fab fa-youtube"></a>Youtube</a>
+                            <a href="https://twitter.com" class="sc-kLwhqv bgfcJO">
+                                <a class="sc-kLwhqv bgfcJO fab fa-twitter"></a>Twitter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--
+          This HTML file is a template.
+          If you open it directly in the browser, you will see an empty page.
+    
+          You can add webfonts, meta tags, or analytics to this file.
+          The build step will place the bundled scripts into the <body> tag.
+    
+          To begin the development, run `npm start` or `yarn start`.
+          To create a production bundle, use `npm run build` or `yarn build`.
+        -->
+    <script>
+        const $ = document.querySelector.bind(document);
+        const $$ = document.querySelectorAll.bind(document);
+
+        const tabs = $$(".tab-item");
+        const panes = $$(".tab-pane");
+
+        const tabActive = $(".tab-item.active");
+        const line = $(".tabs .line");
+
+        line.style.left = tabActive.offsetLeft + "px";
+        line.style.width = tabActive.offsetWidth + "px";
+
+        tabs.forEach((tab, index) => {
+            const pane = panes[index];
+
+            tab.onclick = function() {
+                $(".tab-item.active").classList.remove("active");
+                $(".tab-pane.active").classList.remove("active");
+
+                line.style.left = this.offsetLeft + "px";
+                line.style.width = this.offsetWidth + "px";
+
+                this.classList.add("active");
+                pane.classList.add("active");
+            };
+        });
+    </script>
+    {{!-- <script src="/static/js/bundle.js"></script>
+    <script src="/static/js/vendors~main.chunk.js"></script>
+    <script src="/static/js/main.chunk.js"></script> --}}
+
+</body>
+
+</html>

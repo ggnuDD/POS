@@ -6,28 +6,36 @@ export const ProductWrapper = styled.div`
         position: relative;
     }
     .text-on-image1 {
-      display: none;
+      display: block;
       border: solid;
       border-weight: 1px;
+      border-color: red;
+      background-color: red !important;
+      border-radius: 10px;
       position: absolute;
       text-align: center;
       right: 65px;
       left: 65px;
-      bottom: 50px;
-      color: #C4A484;
+      bottom: 120px;
+      color: white;
+      text-decoration: none;
     }
     .text-on-image2 {
-      display: none;
+      display: block;
       border: solid;
-      color: #C4A484;
       border-weight: 1px;
+      border-color: red;
+      background-color: red !important;
+      border-radius: 10px;
+      color: white;
       position: absolute;
       text-align: center;
       right: 65px;
       left: 65px;
-      top: 50px;
+      top: 120px;
+      text-decoration: none;
     }
-
+    
     .card-footer {
         border-top: transparent;
         background-color: #C4A484 !important;
@@ -101,9 +109,9 @@ export const ProductWrapper = styled.div`
     transform: translate(100%, 100%);
   }
   .card-img-top {
-    width: 75%;
-    height: 270px;
-    margin: 10px 35px;
+    width: 100%;
+    height: 380px;
+    margin: 10px 0px;
   }
   .img-container {
     position: relative;

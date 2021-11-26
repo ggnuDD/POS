@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CINEMA ADMINISTRATOR</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./public/css/base.css">
+    <link rel="stylesheet" href="./public/css/grid.css">
+    <link rel="stylesheet" href="./public/fonts/fonts/themify-icons/themify-icons.css">
+    <!--Icon-->
+    <link rel="stylesheet" href="./public/fonts/font-awesome-pro-master/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!--font chữ-->
+    <link rel="stylesheet" href="./public/css/app.css">
+</head>
+
+
+
+<body>
+    <div class="container-fluid">
+        <div class="header__index">
+            <section class="header">
+                <div class="header__logo">
+                    <a href="" class="header__logo-link">
+                        <img src="./public/img/logo.jpg" alt="" class="header__logo-img">
+                    </a>
+                </div>
+                <div class="header__navbar hide-on-tablet-mobile">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">PHIM</a>
+
+                            <li class="header__navbar-item">
+                                <a href="" class="header__navbar-item-link">LỊCH CHIẾU</a>
+
+                            </li>
+
+                            <li class="header__navbar-item">
+                                <a href="" class="header__navbar-item-link">RẠP VÀ GIÁ</a>
+                            </li>
+
+                            <li class="header__navbar-item">
+                                <a href="" class="header__navbar-item-link">HỎI VÀ ĐÁP</a>
+                                <!-- <ul class="header__subnav-list">
+                                    <li class="header__subnav-item">
+                                        <a href="" class="header__subnav-link">Sign in</a>
+                                    </li>
+                                    <li class="header__subnav-item header__subnav-item">
+                                        <a href="" class="header__subnav-link">Register</a>
+                                    </li>
+                                    <li class="header__subnav-item header__subnav-item">
+                                        <a href="" class="header__subnav-link">Checkout</a>
+                                    </li>
+                                </ul> -->
+                            </li>
+                            <li class="header__navbar-item">
+                                <a href="" class="header__subnav-item-link" style="font-size:20px; color: white; font-weight:bold; margin-left: 300%;">ADMINISTRATOR</a>
+                            </li>
+
+                    </ul>
+                </div>
+
+                <!-- <div class="header-content__search">
+                    <div class="header-content__search-input">
+                        <input type="text" class="header-content__search-input-wrap" placeholder="Search products...">
+                        <div class="header-content__search-history">
+
+                        </div>
+                        <div class="header-content__search-btn">
+                            <i class="header-content__search-icon fal fa-search"></i>
+                        </div>
+                    </div>
+                </div> -->
+
+                <input type="checkbox" hidden id="header-nav" class="header-input">
+
+                <label for="header-nav" class="header-slide__menu ">
+      <i class="far fa-shopping-cart header-slide__menu-img"></i>
+      <!-- <span class="header-slide__notice">3</span> -->
+
+    </label>
+
+                <!-- Begin slidebar -->
+
+
+                <!-- slidebar on pc -->
+                <div class="slidebar__container hide-on-tablet-mobile">
+                    <label for="header-nav" class="slidebar__close ">
+        <i class="slidebar__close-icon far fa-times-circle"></i>
+      </label>
+                    <div class="slidebar__wrap">
+                        <div class="slidebar__wrap-header">
+                            <span class="slidebar__wrap-header-quantity"></span>
+                            <h3 class="slidebar__wrap-header-heading">
+                                <span class="under-line-effect under-line-effect--yellow">
+              YOUR CART
+            </span>
+                            </h3>
+                        </div>
+                        <!-- <ul class="slidebar__wrap-list">
+                            <li class="slidebar__wrap-item">
+                                <img src="../img/fried_chicken.jpg" alt="" class="slidebar__wrap-img">
+                                <div class="slidebar__wrap-info">
+                                    <a href="" class="slidebar__wrap-info-product">Fried Chicken</a>
+
+                                    <a href="" class="slidebar__wrap-info-food">
+                                        <button class="btn-minus">-</button>
+                                        <span class="slidebar__wrap-info-quantity">1</span>
+                                        <button class="btn-plus">+</button>
+                                    </a>
+                                </div>
+                                <div class="slidebar__wrap-price">$5.00</div>
+                            </li>
+                            <li class="slidebar__wrap-item">
+                                <img src="../img/fried_chicken.jpg" alt="" class="slidebar__wrap-img">
+                                <div class="slidebar__wrap-info">
+                                    <a href="" class="slidebar__wrap-info-product">Fried Chicken</a>
+
+                                    <a href="" class="slidebar__wrap-info-food">
+                                        <button class="btn-minus">-</button>
+                                        <span class="slidebar__wrap-info-quantity">1</span>
+                                        <button class="btn-plus">+</button>
+                                    </a>
+                                </div>
+                                <div class="slidebar__wrap-price">$5.00</div>
+                            </li>
+                            <li class="slidebar__wrap-item">
+                                <img src="../img/fried_chicken.jpg" alt="" class="slidebar__wrap-img">
+                                <div class="slidebar__wrap-info">
+                                    <a href="" class="slidebar__wrap-info-product">Fried Chicken</a>
+
+                                    <a href="" class="slidebar__wrap-info-food">
+                                        <button class="btn-minus">-</button>
+                                        <span class="slidebar__wrap-info-quantity">1</span>
+                                        <button class="btn-plus">+</button>
+                                    </a>
+                                </div>
+                                <div class="slidebar__wrap-price">$5.00</div>
+                            </li>
+                            <li class="slidebar__wrap-item">
+                                <img src="../img/fried_chicken.jpg" alt="" class="slidebar__wrap-img">
+                                <div class="slidebar__wrap-info">
+                                    <a href="" class="slidebar__wrap-info-product">Fried Chicken</a>
+
+                                    <span class="slidebar__wrap-info-food">
+                                    <button class="btn-minus">-</button>
+                                    <span class="slidebar__wrap-info-quantity">1</span>
+                                    <button class="btn-plus">+</button>
+                                    </span>
+                                </div>
+                                <div class="slidebar__trash-wrap">
+                                    <i class="fal fa-trash-alt slidebar__trash"></i>
+                                    <div class="slidebar__wrap-price">$5.00</div>
+
+                                </div>
+                            </li>
+                        </ul> -->
+
+
+                        <!-- <div class="slidebar__wrap-total">
+                            <span class="slidebar__wrap-sub-total">SUBTOTAL</span>
+                            <span class="slidebar__wrap-sub-total">$15.00</span>
+                        </div> -->
+                        <button class="btn-large featured-product__btn checkout-btn" type="submit" href="">CHECKOUT</button>
+                    </div>
+
+                </div>
+                <!-- end silebar -->
+            </section>
+
+            <!-- header content -->
+            <div class="header-content">
+                <div class="header-content__wrap">
+                    <div class="header-content__heading">
+
+                    </div>
+                    <div class="header-content__desc">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- End header -->
+
+    <!-- Begin home -->
+    <div class="container">
+        <div class="shop grid ">
+            <span class="content__header-decs" style="color: grey; font-size: 30px">CHỨC NĂNG</span>
+            <div class="content__header">
+                <h2 class="content__header-heading">
+                    <!-- <span class="under-line-effect under-line-effect--red">COMBO</span> -->
+                    <div class="tabs">
+                        <div class="tab-item active">
+                            <i class="tab-icon"></i> CẬP NHẬT THÔNG TIN PHIM
+                        </div>
+                        <div class="tab-item">
+                            <i class="tab-icon"></i> PHÂN LOẠI
+                        </div>
+                        <div class="tab-item">
+                            <i class="tab-icon"></i> SỐ LIỆU THỐNG KÊ
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                </h2>
+            </div>
+            <div class="tab-content">
+                <div class="tab-pane active">
+                    <h2>CẬP NHẬT THÔNG TIN PHIM</h2>
+                    <div class="shop__wrap row feature-home">
+                        <div class="feature-item col l-4 m-12">
+                            <img src="./public/img/filmtitle.jpg" alt="" class="product__item-img">
+                            <div class="product-body">
+                                <div class="product__item-heading">CHỈNH SỬA TIÊU ĐỀ PHIM</div>
+                                <!-- <div class="product__item-quanlity">
+                                    <i class="product__item-icon fas fa-star"></i>
+                                    <i class="product__item-icon fas fa-star"></i>
+                                    <i class="product__item-icon fas fa-star"></i>
+                                    <i class="product__item-icon fas fa-star"></i>
+                                    <i class="product__item-icon fas fa-star"></i>
+                                </div>
+                                <div class="product__item-price">
+                                    <span class="product__item-price-sale">$5.00</span>
+                                </div>
+                                <a href="" class="product__item-btn">ADD TO CART</a>
+                                <spa class="product__item-btn js-details-btn"><i class="far fa-search"></i></spa> -->
+                            </div>
+                        </div>
+                        <div class="feature-item col l-4 m-12">
+                            <img src="./public/img/showtime.jpg" alt="" class="product__item-img">
+                            <div class="product-body">
+                                <div class="product__item-heading">CHỈNH SỬA LỊCH CHIẾU</div>
+                                <!-- <div class="product__item-quanlity">
+                                    <i class="product__item-icon fas fa-star"></i>
+                                    <i class="product__item-icon fas fa-star"></i>
+                                    <i class="product__item-icon fas fa-star"></i>
+                                    <i class="product__item-icon fas fa-star"></i>
+                                    <i class="product__item-icon fas fa-star"></i>
+                                </div>
+                                <div class="product__item-price">
+                                    <span class="product__item-price-sale">$5.00</span>
+                                </div>
+                                <a href="" class="product__item-btn">ADD TO CART</a>
+                                <a href="" class="product__item-btn"><i class="far fa-search"></i></a> -->
+                            </div>
+                        </div>
+                        <!-- <div class="feature-item col l-4 m-12">
+                            <img src="./img/fried_chicken.jpg" alt="" class="product__item-img">
+                            <div class="product-body">
+                                <div class="product__item-heading">Fried Chicken</div>
+                                <div class="product__item-quanlity">
+                                    <i class="product__item-icon fas fa-star"></i>
+                                    <i class="product__item-icon fas fa-star"></i>
+                                    <i class="product__item-icon fas fa-star"></i>
+                                    <i class="product__item-icon fas fa-star"></i>
+                                    <i class="product__item-icon fas fa-star"></i>
+                                </div>
+                                <div class="product__item-price">
+                                    <span class="product__item-price-sale">$5.00</span>
+                                </div>
+                                <a href="" class="product__item-btn">ADD TO CART</a>
+                                <a href="" class="product__item-btn"><i class="far fa-search"></i></a>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <!-- <div class="content__header">
+                <h3 class="content__header-heading">
+                    <span class="under-line-effect under-line-effect--red">FOOD</span>
+                </h3>
+            </div> -->
+                <div class="tab-pane">
+                    <h2>PHÂN LOẠI</h2>
+                    <div class="shop__wrap row feature-home">
+                        <div class="feature-item col l-4 m-12">
+                            <img src="./public/img/filmcategory.jpg" alt="" class="product__item-img">
+                            <div class="product-body">
+                                <div class="product__item-heading">THỂ LOẠI PHIM</div>
+                                <!-- <div class="product__item-quanlity">
+                                    <i class="product__item-icon fas fa-star"></i>
+                                    <i class="product__item-icon fas fa-star"></i>
+                                    <i class="product__item-icon fas fa-star"></i>
+                                    <i class="product__item-icon fas fa-star"></i>
+                                    <i class="product__item-icon fas fa-star"></i>
+                                </div>
+                                <div class="product__item-price">
+                                    <span class="product__item-price-sale">$5.00</span>
+                                </div>
+                                <a href="" class="product__item-btn">ADD TO CART</a>
+                                <a href="" class="product__item-btn"><i class="far fa-search"></i></a> -->
+                            </div>
+                        </div>
+                        <div class="feature-item col l-4 m-12">
+                            <img src="./public/img/filmondate.jpg" alt="" class="product__item-img">
+                            <div class="product-body">
+                                <div class="product__item-heading">CHIẾU THEO NGÀY</div>
+                                <!-- <div class="product__item-quanlity">
+                                    <i class="product__item-icon fas fa-star"></i>
+                                    <i class="product__item-icon fas fa-star"></i>
+                                    <i class="product__item-icon fas fa-star"></i>
+                                    <i class="product__item-icon fas fa-star"></i>
+                                    <i class="product__item-icon fas fa-star"></i>
+                                </div>
+                                <div class="product__item-price">
+                                    <span class="product__item-price-sale">$5.00</span>
+                                </div>
+                                <a href="" class="product__item-btn">ADD TO CART</a>
+                                <a href="" class="product__item-btn"><i class="far fa-search"></i></a> -->
+                            </div>
+                        </div>
+                        <!-- <div class="feature-item col l-4 m-12">
+                            <img src="./img/hamburger.jpg" alt="" class="product__item-img">
+                            <div class="product-body">
+                                <div class="product__item-heading">Hamburger</div>
+                                <div class="product__item-quanlity">
+                                    <i class="product__item-icon fas fa-star"></i>
+                                    <i class="product__item-icon fas fa-star"></i>
+                                    <i class="product__item-icon fas fa-star"></i>
+                                    <i class="product__item-icon fas fa-star"></i>
+                                    <i class="product__item-icon fas fa-star"></i>
+                                </div>
+                                <div class="product__item-price">
+                                    <span class="product__item-price-sale">$5.00</span>
+                                </div>
+                                <a href="" class="product__item-btn">ADD TO CART</a>
+                                <a href="" class="product__item-btn"><i class="far fa-search"></i></a>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+
+
+                <!-- <div class="content__header">
+                <h3 class="content__header-heading">
+                    <span class="under-line-effect under-line-effect--red">DRINK</span>
+                </h3>
+            </div> -->
+                <div class="tab-pane">
+                    <h2>SỐ LIỆU THỐNG KÊ</h2>
+                    <div class="shop__wrap row feature-home">
+                        <div class="feature-item col l-4 m-12">
+                            <img src="./public/img/profit.jpg" alt="" class="product__item-img">
+                            <div class="product-body">
+                                <div class="product__item-heading">DOANH THU</div>
+                                <!-- <div class="product__item-quanlity">
+                                    <i class="product__item-icon fas fa-star"></i>
+                                    <i class="product__item-icon fas fa-star"></i>
+                                    <i class="product__item-icon fas fa-star"></i>
+                                    <i class="product__item-icon fas fa-star"></i>
+                                    <i class="product__item-icon fas fa-star"></i>
+                                </div>
+                                <div class="product__item-price">
+                                    <span class="product__item-price-sale">$5.00</span>
+                                </div>
+                                <a href="" class="product__item-btn">ADD TO CART</a>
+                                <a href="" class="product__item-btn"><i class="far fa-search"></i></a> -->
+                            </div>
+                        </div>
+                        <div class="feature-item col l-4 m-12">
+                            <img src="./public/img/theaters.jpg" alt="" class="product__item-img">
+                            <div class="product-body">
+                                <div class="product__item-heading">RẠP</div>
+                                <!-- <div class="product__item-quanlity">
+                                    <i class="product__item-icon fas fa-star"></i>
+                                    <i class="product__item-icon fas fa-star"></i>
+                                    <i class="product__item-icon fas fa-star"></i>
+                                    <i class="product__item-icon fas fa-star"></i>
+                                    <i class="product__item-icon fas fa-star"></i>
+                                </div>
+                                <div class="product__item-price">
+                                    <span class="product__item-price-sale">$5.00</span>
+                                </div>
+                                <a href="" class="product__item-btn">ADD TO CART</a>
+                                <a href="" class="product__item-btn"><i class="far fa-search"></i></a> -->
+                            </div>
+                        </div>
+                        <div class="feature-item col l-4 m-12">
+                            <img src="./public/img/films.jpg" alt="" class="product__item-img">
+                            <div class="product-body">
+                                <div class="product__item-heading">PHIM</div>
+                                <!-- <div class="product__item-quanlity">
+                                    <i class="product__item-icon fas fa-star"></i>
+                                    <i class="product__item-icon fas fa-star"></i>
+                                    <i class="product__item-icon fas fa-star"></i>
+                                    <i class="product__item-icon fas fa-star"></i>
+                                    <i class="product__item-icon fas fa-star"></i>
+                                </div>
+                                <div class="product__item-price">
+                                    <span class="product__item-price-sale">$5.00</span>
+                                </div>
+                                <a href="" class="product__item-btn">ADD TO CART</a>
+                                <a href="" class="product__item-btn"><i class="far fa-search"></i></a> -->
+                            </div>
+                        </div>
+                        <div class="feature-item col l-4 m-12">
+                            <img src="./public/img/times.jpg" alt="" class="product__item-img">
+                            <div class="product-body">
+                                <div class="product__item-heading">KHUNG GIỜ CHIẾU</div>
+                                <!-- <div class="product__item-quanlity">
+                                    <i class="product__item-icon fas fa-star"></i>
+                                    <i class="product__item-icon fas fa-star"></i>
+                                    <i class="product__item-icon fas fa-star"></i>
+                                    <i class="product__item-icon fas fa-star"></i>
+                                    <i class="product__item-icon fas fa-star"></i>
+                                </div>
+                                <div class="product__item-price">
+                                    <span class="product__item-price-sale">$5.00</span>
+                                </div>
+                                <a href="" class="product__item-btn">ADD TO CART</a>
+                                <a href="" class="product__item-btn"><i class="far fa-search"></i></a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <script>
+                const $ = document.querySelector.bind(document);
+                const $$ = document.querySelectorAll.bind(document);
+
+                const tabs = $$(".tab-item");
+                const panes = $$(".tab-pane");
+
+                const tabActive = $(".tab-item.active");
+                const line = $(".tabs .line");
+
+                line.style.left = tabActive.offsetLeft + "px";
+                line.style.width = tabActive.offsetWidth + "px";
+
+                tabs.forEach((tab, index) => {
+                    const pane = panes[index];
+
+                    tab.onclick = function() {
+                        $(".tab-item.active").classList.remove("active");
+                        $(".tab-pane.active").classList.remove("active");
+
+                        line.style.left = this.offsetLeft + "px";
+                        line.style.width = this.offsetWidth + "px";
+
+                        this.classList.add("active");
+                        pane.classList.add("active");
+                    };
+                });
+            </script>
+
+
+        </div>
+
+
+        <div class="modal">
+            <div class="modal-container js-modal-container">
+                <div class="modal-close js-modal-close">
+                    <i class="ti-close"></i>
+                </div>
+
+                <div class="modal-body">
+                    <div class="modal-product">
+                        <!-- Start product images -->
+                        <div class="product-images">
+                            <div class="main-image images">
+                                <img alt="" src="./img/fried_chicken.jpg" class="img-responsive">
+                            </div>
+                        </div>
+                        <!-- end product images -->
+                        <div class="product-info">
+                            <h1>Fried Chicken</h1>
+                            <div class="price-box">
+                                <h1>Unit price</h1>
+                                <span class="new-price">$5.00</span>
+                            </div>
+                            <div class="quantity-box">
+                                <h1>Quantity</h1>
+                                <div class="quantity-box__wrap">
+                                    <button class="btn-minus">-</button>
+                                    <span class="slidebar__wrap-info-quantity">1</span>
+                                    <button class="btn-plus">+</button>
+                                </div>
+                            </div>
+                            <div class="quick-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid deleniti praesentium tenetur placeat laudantium, expedita velit iste reprehenderit ipsa quisquam, nisi quasi omnis consequuntur at cumque porro maxime eum perspiciatis!
+                            </div>
+                            <button class="btn-large featured-product__btn checkout-btn modal-btn" type="submit" href="">ADD TO CART</button>
+                        </div>
+                        <!-- .product-info -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            const buyBtns = document.querySelectorAll('.js-details-btn')
+            const modal = document.querySelector('.modal')
+            const modalContainer = document.querySelector('.js-modal-container')
+            const modalClose = document.querySelector('.js-modal-close')
+
+
+            //Hàm hiển thị  modal (thêm class open vào modal)
+            function showBuyTickets() {
+                modal.classList.add('open')
+            }
+            //lặp qua từng thẻ button và nghe hành vi click
+            for (const buyBtn of buyBtns) {
+                buyBtn.addEventListener('click', showBuyTickets)
+            }
+            //Hàm ẩn modal (bỏ class open trong thẻ modal đi)
+            function hideBuyTickets() {
+                modal.classList.remove('open')
+            }
+            //nghe hành vi click vào button close
+            modalClose.addEventListener('click', hideBuyTickets)
+
+            //Ẩn modal khi click bên ngoài
+            modal.addEventListener('click', hideBuyTickets)
+
+            modalContainer.addEventListener('click', function(event) {
+                event.stopPropagation();
+            })
+        </script>
+    </div>
+    <!-- End home -->
+
+    <!-- Begin footer -->
+    <div class="container-fluid">
+        <div class="footer">
+            <div class="footer__copyright">
+                <span>Cinema is made by Group ... - L.. - HCMUT in 2021</span>
+            </div>
+        </div>
+    </div>
+    <!-- End footer -->
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <script>
+    </script>
+
+</body>
+
+</html>

@@ -1,4 +1,4 @@
-export const featureProd = [
+export const showing = [
     { 
         id: 24 , 
         title:"ĐÊM TỐI RỰC RỠ", 

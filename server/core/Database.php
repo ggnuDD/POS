@@ -5,7 +5,7 @@ class Database
     protected $hostname = 'localhost';
     protected $username = 'root';
     protected $password = '';
-    protected $dbname = 'dbdoancnpm';
+    protected $dbname = 'ticket_online';
     //connect to db
     function __construct()
     {
