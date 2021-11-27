@@ -16,7 +16,7 @@ export const featured = [
      price3D: "165000", 
      length:"100 Phút", 
      show:"12-11-2021", 
-     img:"https://media.lottecinemavn.com/Media/WebAdmin/b4ec731cb37c4bf3b448a95fcd44182a.jpg"},
+     img:"https://media.lottecinemavn.com/Media/WebAdmin/d757cc42cc474dd2a4d5a16a494d4239.jpg"},
     { 
      id: 3, 
      title:"VỆ SĨ SÁT THỦ 2: NHÀ CÓ NÓC", 
@@ -25,14 +25,14 @@ export const featured = [
      price3D: "165000", 
      length:"100 Phút", 
      show:"29-10-2021", 
-     img:"https://media.lottecinemavn.com/Media/WebAdmin/d503d574995149699de9640cda275724.jpg"},
+     img:"https://media.lottecinemavn.com/Media/WebAdmin/fec0b20128844239b5a1eaf9f17e32ce.jpg"},
     { 
      id: 4, 
-     title:"SUICIDE SQUAD: ĐIỆP VỤ CẢM TỬ", 
+     title:"ETERNALS: CHỦNG TỘC BẤT TỬ", 
      type:["Hành động"], 
      price2D: "75000", 
      price3D: "165000", 
      length:"100 Phút", 
      show:"05-11-2021", 
-     img:"https://media.lottecinemavn.com/Media/WebAdmin/b165bd1c32a04f44973c3d08552640ad.png"}
+     img:"https://media.lottecinemavn.com/Media/WebAdmin/32bde502978e4545b26afe7daa350ad3.png"}
 ];

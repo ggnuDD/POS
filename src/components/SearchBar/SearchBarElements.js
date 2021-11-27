@@ -19,6 +19,7 @@ export const Nav = styled.nav`
 export const Logo = styled.div`
   padding: 0;
   width: 300px;
+  height: 50px;
   @media screen and (max-width: 1200px) {
     width: 150px;
   }
@@ -58,7 +59,6 @@ export const ShopLogo = styled.p`
   color: #ffdd00;
   font-size: 12px;
   font-weight: bold;
-  margin: auto;
   margin-left: 5px;
   margin-right: -10px;
 
@@ -90,7 +90,7 @@ export const NavMenu = styled.div`
 
 export const NavLinkText = styled.p`
   font-size: 18px;
-  margin: auto;
+  margin-top: 5px;
   float: right;
   color: #fff;
   text-decoration: none;

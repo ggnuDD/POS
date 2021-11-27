@@ -2,7 +2,6 @@ import React, { Component, useState } from "react";
 import { Link } from "react-router-dom";
 import { ProductWrapper } from "../../container/ProductWrapper";
 import "bootstrap/dist/css/bootstrap.min.css";
-import LayeredImage from "react-layered-image";
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import '../popup/popupStyling.css'
