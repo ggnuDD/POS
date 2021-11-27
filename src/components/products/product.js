@@ -34,14 +34,14 @@ export default class Product extends Component {
                     to="/payment"
                     style={this.state.style}
                   >
-                    <h3>Đặt vé</h3>
+                    <h3 style={{marginTop: '6px'}}>Đặt vé</h3>
                   </Link>
                   <Link 
                     class='text-on-image2'
                     to="/detail"
                     style={this.state.style}
                   >
-                    {<h3>Chi tiết</h3>}
+                    <h3 style={{marginTop: '6px'}}>Chi tiết</h3>
                   </Link>
                 </div>
               </div>

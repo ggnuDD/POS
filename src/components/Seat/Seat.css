@@ -1,0 +1,33 @@
+.Available {
+	width: 30px;
+	height: 30px;
+	background: blue;
+	border-radius: 40%;
+}
+
+.Available:hover{
+	background: yellow;
+	cursor: pointer;
+}
+
+#selected {
+	background: yellow;
+}
+
+
+.Unavailable {
+	width: 30px;
+	height: 30px;
+	background: red;
+	border-radius: 40%;
+}
+
+.Row1, .Row2, .Row3, .Row4, .Row5, .Row6, .Row7 {
+	display: flex;
+    border: solid #C4A484;
+    border-width: 5px;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 0px 650px;
+}
+

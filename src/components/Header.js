@@ -5,7 +5,7 @@ const Header = () => {
         background: 'white',
         color: '#C4A484',
         textAlign: 'center',
-        padding: '  10px',
+        padding: '10px',
         fontFamily: 'Courier New',
         borderBottom: 'bold',
         borderWidth: '5px'
