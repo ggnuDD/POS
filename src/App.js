@@ -2,7 +2,6 @@ import React from 'react'
 import Header from './components/Header'
 import Modal from './components/modal/modal';
 import Home from "./pages/home";
-
 import SeatPicker from "./pages/seat";
 import Movie from "./pages/movie";
 import Payment from "./pages/Payment";

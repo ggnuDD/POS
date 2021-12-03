@@ -40,7 +40,7 @@ class Featured extends React.Component
             slidesToShow: 1,
             slidesToScroll: 1,
             autoplay: true,
-            autoplayspeed: 2000,
+            autoplayspeed: 1000,
             responsive: [
               {
                 breakpoint: 1024,
