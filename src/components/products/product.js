@@ -22,7 +22,7 @@ export default class Product extends Component {
         <div className="card prodCard">
           <div className="img-container p-5">
             <div
-              onMouseEnter={() => this.setState({ style: {display: 'block'} })}
+              onMouseEnter={() => this.setState({ style: {display: 'block', height: '55px'} })}
               onMouseLeave={() => this.setState({ style: {display: 'none'} })}>
               <div className="head-text">
                 <div className="head-image">
@@ -34,14 +34,14 @@ export default class Product extends Component {
                     to="/payment"
                     style={this.state.style}
                   >
-                    <h3 style={{marginTop: '6px'}}>Đặt vé</h3>
+                    <h3  style={{marginTop: '12px'}}>Đặt vé</h3>
                   </Link>
                   <Link 
                     class='text-on-image2'
                     to="/detail"
                     style={this.state.style}
                   >
-                    <h3 style={{marginTop: '6px'}}>Chi tiết</h3>
+                    {<h3  style={{marginTop: '12px'}}>Chi tiết</h3>}
                   </Link>
                 </div>
               </div>

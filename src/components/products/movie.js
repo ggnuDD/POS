@@ -1,12 +1,8 @@
-import React, { Component, useState } from "react";
+import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { ProductWrapper } from "../../container/ProductWrapper";
 import "bootstrap/dist/css/bootstrap.min.css";
-import LayeredImage from "react-layered-image";
-import Popup from 'reactjs-popup';
-import 'reactjs-popup/dist/index.css';
-import '../popup/popupStyling.css'
-import '../modal/modal'
+// import LayeredImage from "react-layered-image";
 export default class Movie extends Component {
 
   constructor(props) {
@@ -22,12 +18,13 @@ export default class Movie extends Component {
     const { id, title, img, type, length, show } = this.props.product;
     const hover = this.state.hover;
 
+
     return (
       <ProductWrapper className="col-12 col-md-6 col-lg-3 my-3 col-grid">
         <div className="card prodCard" style={{height: '600px'}}>
           <div className="img-container p-5">
             <div
-              onMouseEnter={() => this.setState({ style: {display: 'block'}, count : hover + 1} )}
+              onMouseEnter={() => this.setState({ style: {display: 'block', height: '55px'}, count : hover + 1} )}
               onMouseLeave={() => this.setState({ style: {display: 'none'}, count : hover - 1} )}>
               <div className="head-text">
                 <div className="head-image">
@@ -35,16 +32,17 @@ export default class Movie extends Component {
                    
                 </div >
                 <div>
-                  <li
+                  <Link
                     class='text-on-image1'
+                    to="/payment"
                     style={this.state.style}>
-                      <h3 style={{marginTop: '6px', cursor: 'pointer'}}>Mua vé</h3>
-                  </li>
+                      <h3 style={{marginTop: '12px'}}>Mua vé</h3>
+                  </Link>
                   <Link 
                     class='text-on-image2'
                     to="/detail"
                     style={this.state.style}>
-                      <h3 style={{marginTop: '6px'}}>Chi tiết</h3>
+                      <h3  style={{marginTop: '12px'}}>Chi tiết</h3>
                   </Link>
                 </div>
               </div>
