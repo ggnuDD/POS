@@ -14,13 +14,11 @@ import { FooterContainer } from "./container/footer";
 import { Provider } from "./components/products/content";
 import Login from "./components/login/login"
 import Register from "./components/login/register"
-import AuthProvider from "./context/AuthController";
 import './App.css';
 
 function App (){
   return(
   <div>
-    <AuthProvider>
       <Provider>
         <Router>
             <SearchBar />
@@ -43,7 +41,7 @@ function App (){
         <div style={{height:"30px", backgroundColor: '#C4A484'}}></div>
         <FooterContainer />
       </Provider>
-    </AuthProvider>
+      <Modal/>
   </div>
   )
 }

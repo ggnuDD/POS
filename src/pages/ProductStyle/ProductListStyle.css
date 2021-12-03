@@ -21,3 +21,14 @@
   bottom: -10px;
   font-size: 20px;
 }
+
+#inputID::placeholder {
+  color: black  ;
+  opacity: 1;
+}
+
+input[type=text]
+{
+    border:none;
+    /* border-bottom: 1px solid lightgray; */
+}
