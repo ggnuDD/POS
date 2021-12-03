@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+gitimport React, { Component } from "react";
 import { showing } from "../data/ProductData/showing";
 import { soon } from "../data/ProductData/soon";
 import Movie from "../components/products/movie";

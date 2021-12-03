@@ -32,15 +32,17 @@ function Login(props) {
                 },
             })
                 .then(function (response) {
-                    if (response.data !== "valid") {
-                        setShowError(response.data);
-                        setTimeout(() => {
-                            setShowError("");
-                        }, 1000);
-                    } else {
-                        setIsLogin(true);
-                        history.replace("/");
-                    }
+                    console.log(response.data);
+                    // if (response.data !== "valid") {
+                        
+                    //     setShowError(response.data);
+                    //     setTimeout(() => {
+                    //         setShowError("");
+                    //     }, 1000);
+                    // } else {
+                    //     setIsLogin(true);
+                    //     history.replace("/");
+                    // }
                 })
                 .catch(function (response) {
                     console.log("error");
