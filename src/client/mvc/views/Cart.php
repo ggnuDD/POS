@@ -7,7 +7,7 @@ if ($cart) {
             continue;
         else { ?>
             <div class="item" id="cart-item<?php echo $value['id'] ?>">
-                <img src="http://localhost/CPP_Assignment_CNPM/SourceMVC/images/<?php echo $value['image'] ?>" alt="" />
+                <img src="http://localhost/POS/src/images/<?php echo $value['image'] ?>" alt="" />
                 <div class="name">
                     <?php echo ($key)  ?>
                 </div>

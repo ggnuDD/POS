@@ -42,7 +42,7 @@
                             <div class="item">
                                 <?php include "DetailItemModal.php" ?>
                                 <div type="button" data-bs-toggle="modal" data-bs-target="#detail<?php echo $item['id'] ?>">
-                                    <img src="http://localhost/CPP_Assignment_CNPM/SourceMVC/images/<?php echo $item['image'] ?>" alt="  " />
+                                    <img src="http://localhost/POS/src/images/<?php echo $item['image'] ?>" alt="  " />
                                 </div>
                                 <div class="name"><?php echo $item['name'] ?></div>
                                 <div class="price"><?php echo $item['price'] ?> $</div>
