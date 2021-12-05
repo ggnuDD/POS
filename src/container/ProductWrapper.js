@@ -7,6 +7,8 @@ export const ProductWrapper = styled.div`
     }
     .text-on-image1 {
       display: block;
+      border: solid;
+      border-weight: 1px;
       border-color: red;
       background-color: red !important;
       border-radius: 10px;
@@ -17,10 +19,11 @@ export const ProductWrapper = styled.div`
       bottom: 120px;
       color: white;
       text-decoration: none;
-      height: 40px;
     }
     .text-on-image2 {
       display: block;
+      border: solid;
+      border-weight: 1px;
       border-color: red;
       background-color: red !important;
       border-radius: 10px;
@@ -31,7 +34,6 @@ export const ProductWrapper = styled.div`
       left: 65px;
       top: 120px;
       text-decoration: none;
-      height: 40px;
     }
     
     .card-footer {

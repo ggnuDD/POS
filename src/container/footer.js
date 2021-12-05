@@ -1,5 +1,6 @@
 import React from "react";
 import Footer from "../components/footer";
+import 'font-awesome/css/font-awesome.min.css';
 import Icon from "../components/icons";
 
 export function FooterContainer() {
@@ -32,13 +33,13 @@ export function FooterContainer() {
           <Footer.Column>
             <Footer.Title>Kết nối với chúng tôi</Footer.Title>
             <Footer.Link href="https://facebook.com">
-              <Footer.Link className="fab fa-facebook"></Footer.Link>Facebook 
+              <Footer.Link icon="BsFacebook"></Footer.Link>Facebook 
             </Footer.Link>
             <Footer.Link href="https://youtube.com">
-              <Footer.Link className="fab fa-youtube"></Footer.Link>Youtube
+              <Footer.Link icon="BsYoutube"></Footer.Link>Youtube
             </Footer.Link>
             <Footer.Link href="https://twitter.com">
-              <Footer.Link className="fab fa-twitter"></Footer.Link>Twitter
+              <Footer.Link icon="BsTwitter"></Footer.Link>Twitter
             </Footer.Link>
           </Footer.Column>
         </Footer.Row>

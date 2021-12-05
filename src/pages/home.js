@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { movieArray } from "../data/HomePage/Data";
-import { soon } from "../data/ProductData/soon";
 import { showing } from "../data/ProductData/showing";
 import ProductListSlide from "../components/homeComponents/productListSlide/productListSlide";
 import SimpleSlider from '../components/homeBanner';

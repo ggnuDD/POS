@@ -10,9 +10,11 @@ class Provider extends Component {
     products: [],
     soon: soon,
     showing: showing,
+    cart: [],
+    cartTotal: 0,
     category: "",
     modalOpen: false,
-    modalProduct: movieArray[0]
+    modalProduct: movieArray[0],
   };
 
 
@@ -31,39 +33,44 @@ class Provider extends Component {
         })
     }
 
-    getItem = ID => {
-        const item = this.state.products.find(product => product.ID === ID);
+    getItem = id => {
+        const item = this.state.products.find((product) => product.id === id);
         return item;
     };
 
-    addToCart = ID => {
+    addToCart = (id) => {
         let tempProducts = [...this.state.products];
         let tempCart = [...this.state.cart];
-        const index = tempProducts.indexOf(this.getItem(ID));
+        const index = tempProducts.indexOf(this.getItem(id));
         const product = tempProducts[index];
         product.count = product.count + 1;
-        product.total = product.count * product.price;
+        product.total = product.count * product.PRICE;
         if (tempCart.includes(product)) {
-            this.setState({
-                products: tempProducts,
-                cart: [...this.state.cart],
-            }, () => {
-                this.calTotal();
-            })
+          this.setState(
+            {
+              products: tempProducts,
+              cart: [...this.state.cart],
+            },
+            () => {
+              this.calTotal();
+            }
+          );
+        } else {
+          this.setState(
+            {
+              products: tempProducts,
+              cart: [...this.state.cart, product],
+            },
+            () => {
+              this.calTotal();
+            }
+          );
         }
-        else {
-            this.setState({
-                products: tempProducts,
-                cart: [...this.state.cart, product],
-            }, () => {
-                this.calTotal();
-            })
-        }
-    };
+      };
 
-    increase = ID => {
+    increase = id => {
         let tempCart = [...this.state.cart];
-        const tempProd = tempCart.find(item => item.ID === ID);
+        const tempProd = tempCart.find(item => item.id === id);
         const index = tempCart.indexOf(tempProd);
         const prod = tempCart[index];
         prod.count = prod.count + 1;
@@ -80,16 +87,16 @@ class Provider extends Component {
         )
     };
 
-    decrease = ID => {
+    decrease = id => {
         let tempCart = [...this.state.cart];
-        const tempProd = tempCart.find(item => item.ID === ID);
+        const tempProd = tempCart.find(item => item.id === id);
         const index = tempCart.indexOf(tempProd);
         const prod = tempCart[index];
         prod.count = prod.count - 1;
         if (prod.count === 0) {
             this.setState(
                 () => {
-                    this.remove(ID);
+                    this.remove(id);
                 }
             )
         }
@@ -106,11 +113,11 @@ class Provider extends Component {
         )
     };
 
-    remove = ID => {
+    remove = id => {
         let tempProds = [...this.state.products];
         let tempCart = [...this.state.cart];
-        tempCart = tempCart.filter(item => item.ID !== ID);
-        const index = tempProds.indexOf(this.getItem(ID));
+        tempCart = tempCart.filter(item => item.id !== id);
+        const index = tempProds.indexOf(this.getItem(id));
         const delProd = tempProds[index];
         delProd.count = 0;
         delProd.total = 0;
@@ -147,15 +154,19 @@ class Provider extends Component {
         })
     }
 
-    openModal = (ID) => {
-        const prod = this.getItem(ID);
+    test = () => {
+        console.log("Test")
+    }
+
+    openModal = (id) => {
+        const prod = this.getItem(id);
         console.log("bruh");
         this.setState(() => {
             return { modalProduct: prod, modalOpen: true };
         })
     }
 
-    closeModal = (ID) => {
+    closeModal = (id) => {
         this.setState(() => {
             return { modalOpen: false };
         })
@@ -172,7 +183,8 @@ class Provider extends Component {
                 clearCart: this.clearCart,
                 calTotal: this.calTotal,
                 openModal: this.openModal,
-                closeModal: this.closeModal
+                closeModal: this.closeModal,
+                test: this.test
             }}>
                 {this.props.children}
             </Context.Provider>
